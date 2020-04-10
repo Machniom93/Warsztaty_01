@@ -11,15 +11,32 @@ public class Main {
         int maxRandom = 100;
         int randomNumber = r.nextInt(maxRandom);
 
-//        System.out.println(randomNumber);
+        System.out.println(randomNumber);
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Zgadnij liczbę: ");
-        while (!scan.hasNextInt()) {
-            scan.nextLine();
-            System.out.println("To nie jest liczba, spróbuj ponownie: ");
+
+        while (true) {
+            System.out.println("Zgadnij liczbę: ");
+            while (!scan.hasNextInt()) {
+                scan.nextLine();
+                System.out.println("To nie jest liczba, spróbuj ponownie: ");
+            }
+            int number = scan.nextInt();
+
+//            System.out.println(number);
+
+            if (number < randomNumber) {
+                scan.nextLine();
+                System.out.println("Za mało!");
+            }
+            else if (number > randomNumber) {
+                scan.nextLine();
+                System.out.println("Za dużo!");
+            }
+            else {
+                System.out.println("Zagadłeś!");
+                break;
+            }
         }
-        int number = scan.nextInt();
-//        System.out.println(number);
     }
 }
