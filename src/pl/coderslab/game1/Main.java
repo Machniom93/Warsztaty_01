@@ -22,8 +22,10 @@ public class Main {
                 System.out.println("To nie jest liczba, spróbuj ponownie: ");
             }
             int number = scan.nextInt();
-
-//            System.out.println(number);
+            if (number > 100 || number < 1) {
+                System.out.println("Wartość musi być między 1-100.");
+                continue;
+            }
 
             if (number < randomNumber) {
                 scan.nextLine();
