@@ -54,12 +54,3 @@ Napisz funkcję, która:
 Typy kostek występujące w grach:
 D3, D4, D6, D8, D10, D12, D20, D100.
 ```
-#game5 (Wyszukiwarka najpopularniejszych słów)
-```
-1. Zaimportuj do projektu bibliotekę jsoup, możesz ją pobrać z adresu: https://jsoup.org/download
-2. Wyszukaj w popularnych serwisach internetowych nagłówków artykułów, a następnie zapisz pojedyncze słowa w nich występujące do pliku o nazwie popular_words.txt. 
-3. Wywołaj pobieranie dla wybranych serwisów internetowych.
-4. Pomiń wszystkie elementy krótsze niż 3-znakowe.
-5. Utwórz tablicę elementów wykluczonych np. oraz, ponieważ
-6. Wczytaj utworzony plik popular_words.txt i na jego podstawie utwórz plik filtered_popular_words.txt, który zawierać będzie wszystkie znalezione słowa, pomijając słowa wykluczone.
-```
