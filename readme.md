@@ -23,7 +23,7 @@ Napisz program, który:
 #game3 (Gra w zgadywanie liczb 2)
 #####Odwróćmy teraz sytuację z warsztatu "Gra w zgadywanie liczb": to użytkownik pomyśli sobie liczbę z zakresu 1-1000, a komputer będzie zgadywał i zrobi to maksymalnie w 10 ruchach (pod warunkiem, że gracz nie będzie oszukiwał).
 ```
-Zadaniem gracza będzie udzielanie odpowiedzi "więcej", "mniej", "trafiłeś".
+Zadaniem gracza będzie udzielanie odpowiedzi "za dużo", "za mało", "zgadłeś".
 Schemat blokowy algorytmu dostępny jest pod adresem:
 https://gist.github.com/arek-jozwiak-coderslab/4783d45e75a71793a123673cc0998ae3
 Zaimplementuj go w Javie.

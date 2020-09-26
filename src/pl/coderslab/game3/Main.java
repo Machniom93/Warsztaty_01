@@ -1,6 +1,5 @@
 package pl.coderslab.game3;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -15,28 +14,24 @@ public class Main {
         int counter = 1;
         while (true) {
             int guess = ((max-min)/2) + min;
-            String one = "zgadłeś";
             System.out.println("Zgaduję: " + guess);
             System.out.println("Twoja odpowiedź? (za mało/za dużo/zgadłeś): ");
             String answer = scan.nextLine();
-            String answer1 = answer.toLowerCase();
-            if (answer1.contains("zgadłeś")) {
+            String answerToLowerCase = answer.toLowerCase();
+            if (answerToLowerCase.contains("zgadłeś")) {
                 System.out.println("Wygrałem!");
                 break;
-            } else if (counter == 10) {
+            } else if (counter == 11) {
                 System.out.println("Przepraszam nie zgadłem, nie dałem rady;(");
                 break;
-            } else if (answer1.contains("za dużo")) {
+            } else if (answerToLowerCase.contains("za dużo")) {
                 max = guess;
                 counter++;
-                continue;
-            } else if (answer1.contains("za mało")) {
+            } else if (answerToLowerCase.contains("za mało")) {
                 min = guess;
                 counter++;
-                continue;
             } else {
                 System.out.println("nie oszukuj!");
-                continue;
             }
         }
     }
